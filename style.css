@@ -1,0 +1,32 @@
+body {
+    background: linear-gradient(180deg, #000000, #222222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#relogio {
+    font-family: 'Roboto Slab', serif;
+    font-size: 80px;
+    color: #00ff00;
+    text-shadow: 0 0 10px #D8D9DA;
+    animation: pulse 1s infinite alternate;
+    border: 2px solid transparent;
+    border-image: linear-gradient(90deg, #F0F0F0, #00aaff);
+    border-image-slice: 1;
+    padding: 10px;
+}
+
+@keyframes pulse {
+    0% {
+        color: #F0F0F0;
+        text-shadow: 0 0 10px #00aaff;
+    }
+    100% {
+        color: #F0F0F0;
+        text-shadow: 0 0 20px #00aaff;
+    }
+}
+
